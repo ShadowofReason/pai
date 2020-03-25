@@ -36,7 +36,7 @@ jobs:
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/008067a67792a8e27478
+      - https://webhooks.gitter.im/e/huh
     on_success: change
     on_failure: always
     on_start: never
