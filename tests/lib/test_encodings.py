@@ -17,3 +17,14 @@ def test_ru_encoding():
     assert b"B".decode(encoding) == "B"
 
     assert b"0".decode(encoding) == "0"
+
+def test_ee_encoding():
+    encoding = "paradox-ee"
+    codecs.register(paradox_codec_search)
+    assert b"B".decode(encoding) == "B"
+
+    assert b"0".decode(encoding) == "0"
+
+    assert b"Ä".decode(encoding) == "Ä"
+
+    assert b"ü".decode(encoding) == "ü"
