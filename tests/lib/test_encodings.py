@@ -25,5 +25,5 @@ def test_ee_encoding():
 
     assert b"0".decode(encoding) == "0"
 
-    assert b"\xc3\x84".decode(encoding) == "Ä"
+    assert b"Ä".decode(encoding) == u'\x99'
 
